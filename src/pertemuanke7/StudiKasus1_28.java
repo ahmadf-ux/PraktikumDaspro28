@@ -1,7 +1,7 @@
 package pertemuanke7;
 import java.util.Scanner;
 
-public class StudiKasus1 {
+public class StudiKasus1_28 {
     public static void main(String[] args) {
      Scanner fauzi = new Scanner(System.in);
      int hargaPerCup = 19000, jumlahCup, uangBayar, totalHarga, diskon, totalBayar, kembalian, kurang;
