@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class StudiKasus1 {
     public static void main(String[] args) {
      Scanner fauzi = new Scanner(System.in);
-     int hargaPerCup = 18000, jumlahCup, uangBayar, totalHarga, diskon, totalBayar, kembalian, kurang;
+     int hargaPerCup = 19000, jumlahCup, uangBayar, totalHarga, diskon, totalBayar, kembalian, kurang;
 
      System.out.print("Masukkan jumlah cup: ");
      jumlahCup = fauzi.nextInt();
@@ -14,8 +14,8 @@ public class StudiKasus1 {
      totalHarga = jumlahCup * hargaPerCup;
      diskon = 0;
      
-     if (totalHarga >= 100000) {
-         diskon = totalHarga * 10/100;
+     if (totalHarga >= 110000) {
+         diskon = totalHarga * 9/100;
      } else {
         diskon = 0;
      }
