@@ -1,3 +1,4 @@
+package  pertemuanke1; 
 public class latihan28 {
     
     public static void main(String[] args) {

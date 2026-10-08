@@ -1,3 +1,4 @@
+package  petemuanke2;
 import java.util.Scanner;
 
 public class GajiBersihPakDanur28 {

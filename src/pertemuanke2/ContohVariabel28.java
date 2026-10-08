@@ -1,3 +1,4 @@
+package  petemuanke2;
 public class ContohVariabel28 {
 
     public static void main(String[] args) {
