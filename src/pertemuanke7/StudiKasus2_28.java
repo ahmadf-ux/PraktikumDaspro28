@@ -1,7 +1,9 @@
 package pertemuanke7;
+
 import java.util.Scanner;
 
 public class StudiKasus2_28 {
+
     public static void main(String[] args) {
         Scanner fauzi = new Scanner(System.in);
         String namaMhs, jnsKegiatan, status;
@@ -34,6 +36,30 @@ public class StudiKasus2_28 {
             } else {
                 System.out.println("Anda tidak berhak mendapatkan dana penghargaan");
             }
+        } else if (jnsKegiatan.equalsIgnoreCase("PKM")) {
+            System.out.print("Status pendanaan (Angka 1 = lolos, 0 = tidak lolos) : ");
+            statusPendanaan = fauzi.nextInt();
+            if (statusPendanaan == 1) {
+                status = "Anda berhak untukmendapatkan  dana penghargaan.";
+                if (jmlDokumen == 4) {
+                    System.out.println("Nama Mahasiswa: " + namaMhs);
+                    System.out.println("Jenis Kegiatan (BELMAWA/BAKORMA/MANDIRI/PKM/LAINNYA): " + jnsKegiatan);
+                    System.out.println("Status pendanaan: " + status);
+                    System.out.println("Jumlah dokumen: " + jmlDokumen);
+                } else {
+                    status = "Anda tidak berhak mendapatkan dana pendanaan.";
+                    dokumenKurang = 4 - jmlDokumen;
+                    System.out.println("Nama Mahasiswa: " + namaMhs);
+                    System.out.println("Jenis Kegiatan (BELMAWA/BAKORMA/MANDIRI/PKM/LAINNYA): " + jnsKegiatan);
+                    System.out.println("Alasan: dokumen anda kurang " + dokumenKurang + " dokumen.");
+                    System.out.println("Status pendanaan: " + status);
+                }
+            } else {
+                System.out.println("Tidak memperoleh dana penghargaan (PKM tidak tidak lolos pendanaan)");
+            }
+        } else {
+            System.out.println("Kegiatan di luar ketentuan. Dana penghargaan tidak diberikan.");
+        }
         fauzi.close();
     }
 }
