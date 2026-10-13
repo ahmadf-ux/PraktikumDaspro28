@@ -1,4 +1,4 @@
-package  petemuanke2;
+package  pertemuanke2;
 public class ContohOperator28 {
     
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package  petemuanke2;
+package  pertemuanke2;
 import java.util.Scanner;
 
 public class LuasTanahPakTono28 {
