@@ -14,7 +14,6 @@ public class StudiKasus1_28 {
         uangBayar = fauzi.nextInt();
 
         totalHarga = jumlahCup * hargaPerCup;
-        diskon = 0;
 
         if (totalHarga >= 110000) {
             diskon = totalHarga * 9 / 100;
