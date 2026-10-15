@@ -1,5 +1,4 @@
 package pertemuanke7;
-
 import java.util.Scanner;
 
 public class StudiKasus2_28 {
@@ -11,15 +10,15 @@ public class StudiKasus2_28 {
 
         System.out.print("Nama mahasiswa: ");
         namaMhs = fauzi.nextLine();
-        System.out.print("Jenis kegiatan: ");
+        System.out.print("Jenis kegiatan (BELMAWA/BAKORMA/MANDIRI/PKM/LAINNYA): ");
         jnsKegiatan = fauzi.nextLine();
-        System.out.print("Jumlah Dokumen: ");
-        jmlDokumen = fauzi.nextInt();
 
         if (jnsKegiatan.equalsIgnoreCase("BELMAWA") || jnsKegiatan.equalsIgnoreCase("BAKORMA") || jnsKegiatan.equalsIgnoreCase("MANDIRI")) {
             System.out.print("Peringkat juara: ");
             peringkat = fauzi.nextInt();
             if (peringkat == 1 || peringkat == 2 || peringkat == 3) {
+                System.out.print("Jumlah Dokumen: ");
+                jmlDokumen = fauzi.nextInt();
                 if (jmlDokumen == 4) {
                     status = "Selamat! Dana penghargaan diberikan.";
                     System.out.println("Nama Mahasiswa: " + namaMhs);
@@ -29,9 +28,12 @@ public class StudiKasus2_28 {
                     System.out.println("Status anda: " + status);
                 } else {
                     dokumenKurang = 4 - jmlDokumen;
-                    System.out.println("Alasan: dokumen anda kurang " + dokumenKurang + " dokumen.");
+                    System.out.println("Nama Mahasiswa: " + namaMhs);
+                    System.out.println("Jenis Kegiatan (BELMAWA/BAKORMA/MANDIRI/PKM/LAINNYA): " + jnsKegiatan);
+                    System.out.println("Peringkat juara: " + peringkat);
+                    System.out.println("Jumlah dokumen: " + jmlDokumen);
                     status = "Dana penghargaan tidak diberikan.";
-                    System.out.println("Status anda" + status);
+                    System.out.println("Status anda" + status + "Alasan: dokumen anda kurang " + dokumenKurang + " dokumen.");
                 }
             } else {
                 System.out.println("Anda tidak berhak mendapatkan dana penghargaan");
@@ -41,6 +43,8 @@ public class StudiKasus2_28 {
             statusPendanaan = fauzi.nextInt();
             if (statusPendanaan == 1) {
                 status = "Anda berhak untukmendapatkan  dana penghargaan.";
+                System.out.print("Jumlah Dokumen: ");
+                jmlDokumen = fauzi.nextInt();
                 if (jmlDokumen == 4) {
                     System.out.println("Nama Mahasiswa: " + namaMhs);
                     System.out.println("Jenis Kegiatan (BELMAWA/BAKORMA/MANDIRI/PKM/LAINNYA): " + jnsKegiatan);
@@ -55,7 +59,10 @@ public class StudiKasus2_28 {
                     System.out.println("Status pendanaan: " + status);
                 }
             } else {
-                System.out.println("Tidak memperoleh dana penghargaan (PKM tidak tidak lolos pendanaan)");
+                status = "Anda tidak berhak mendapatkan dana penghargaan.";
+                System.out.println("Nama Mahasiswa: " + namaMhs);
+                System.out.println("Jenis Kegiatan (BELMAWA/BAKORMA/MANDIRI/PKM/LAINNYA): " + jnsKegiatan);
+                System.out.println("Status pendanaan: " + status);
             }
         } else {
             System.out.println("Kegiatan di luar ketentuan. Dana penghargaan tidak diberikan.");
