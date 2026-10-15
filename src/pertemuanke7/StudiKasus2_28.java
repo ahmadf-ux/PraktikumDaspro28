@@ -33,7 +33,7 @@ public class StudiKasus2_28 {
                     System.out.println("Peringkat juara: " + peringkat);
                     System.out.println("Jumlah dokumen: " + jmlDokumen);
                     status = "Dana penghargaan tidak diberikan.";
-                    System.out.println("Status anda" + status + "Alasan: dokumen anda kurang " + dokumenKurang + " dokumen.");
+                    System.out.println("Status anda" + status + " Alasan: dokumen anda kurang " + dokumenKurang + " dokumen.");
                 }
             } else {
                 System.out.println("Anda tidak berhak mendapatkan dana penghargaan");
@@ -55,8 +55,7 @@ public class StudiKasus2_28 {
                     dokumenKurang = 4 - jmlDokumen;
                     System.out.println("Nama Mahasiswa: " + namaMhs);
                     System.out.println("Jenis Kegiatan (BELMAWA/BAKORMA/MANDIRI/PKM/LAINNYA): " + jnsKegiatan);
-                    System.out.println("Alasan: dokumen anda kurang " + dokumenKurang + " dokumen.");
-                    System.out.println("Status pendanaan: " + status);
+                    System.out.println("Status pendanaan: " + status + " Alasan: dokumen anda kurang " + dokumenKurang + " dokumen.");
                 }
             } else {
                 status = "Anda tidak berhak mendapatkan dana penghargaan.";
