@@ -2,6 +2,7 @@ package pertemuanke9;
 //jumlah mahasiswa yang dimasukkan = 15 + (28 mod 10) = 23
 import java.util.Scanner;
 public class SiakadWhile28 {
+    
     public static void main(String[] args) {
         Scanner fauzi = new Scanner(System.in);
         int nilai, jml, i = 0;
