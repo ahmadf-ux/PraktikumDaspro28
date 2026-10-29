@@ -1,3 +1,4 @@
+package pertemuanke9;
 //harga tiket = 40000 + (28 mod 6) * 2000 = 48000
 //Syarat diskon pertama = 3 + (28 mod 3) = 4
 //Diskon ke 1 = (8 + (28 mod 5))% = 11%
@@ -10,8 +11,9 @@ public class PenjualanTiketBioskop28 {
 
     public static void main(String[] args) {
         Scanner fauzi = new Scanner(System.in);
-        int hargaTiket = 48000, tiket = 1, totalTiket = 0, harga, banyaknyaTransaksi = 0;
+        int hargaTiket = 48000, tiket = 1, totalTiket = 0, harga, banyaknyaTransaksi = 0, totalHargaTanpaDiskon =0;
         double hargaAkhir, diskonTiket, totalHarga = 0;
+         double persentaseDiskon = 0;
 
         while (tiket != 0) {
             System.out.println("=== Tiket Bioskop ===");
@@ -29,7 +31,6 @@ public class PenjualanTiketBioskop28 {
             }
             harga = hargaTiket * tiket;
             diskonTiket = 0;
-            double persentaseDiskon = 0;
 
             if (tiket > 8) {
                 persentaseDiskon = 0.15;
@@ -54,11 +55,13 @@ public class PenjualanTiketBioskop28 {
 
             totalTiket += tiket;
             totalHarga += hargaAkhir;
+            totalHargaTanpaDiskon += harga;
             banyaknyaTransaksi++;
         }
         System.out.println("===============================================================");
-        System.out.println("Total Harga Penjualan Tiket Hari ini\t:" + totalHarga);
+        System.out.println("Total Harga Penjualan Tiket Hari ini (Dengan Diskon)\t:" + totalHarga);
         System.out.println("Total Tiket Yang Terjual Hari ini\t:" + totalTiket);
+        System.out.println("Total Harga Penjualan Tiket Hari ini (Tanpa Diskon)\t:" + totalHargaTanpaDiskon);
         System.out.println("Banyaknya Transaksi Hari ini\t\t:" + banyaknyaTransaksi);
         System.out.println("===============================================================");
         fauzi.close();
