@@ -12,8 +12,8 @@ public class Star28 {
         System.out.print("Masukkan nilai n: ");
         n = fauzi.nextInt();
 
-        for (int i = 1; i <= n; i++) {
-            System.out.print("*");
+        for (int i = 2; i <= n; i += 2) {
+            System.out.print((i - 1) + " ");
         }
         System.out.println();
         fauzi.close();
