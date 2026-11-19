@@ -14,14 +14,24 @@ public class ArrayNilai28 {
             nilaiAkhir[i] = fauzi.nextInt();
         }
         System.out.println();
-        for (int i = 0; i < nilaiAkhir.length; i++) {
-            // String status = (nilaiAkhir[i] > 70) ? "LULUS" : "TIDAK LULUS";
-            // System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (" + status + ")");
-            String status;
-            if (nilaiAkhir[i] > 70) {
-                status = "LULUS";
-                System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (" + status + ")");
-            }
+        // for (int i = 0; i < nilaiAkhir.length; i++) {
+        //     String status = (nilaiAkhir[i] > 70) ? "LULUS" : "TIDAK LULUS";
+        //     System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (" + status + ")");
+            // String status;
+            // if (nilaiAkhir[i] > 70) {
+            //     status = "LULUS";
+            //     System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (" + status + ")");
+            // } else {
+            //     status = "TIDAK LULUS";
+            // }
+        // }
+        int i = 0;
+        for (int nilai : nilaiAkhir) {
+            String status = (nilaiAkhir[i] > 70) ? "LULUS" : "TIDAK LULUS";
+            System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (" + status + ")");
+            i++;
         }
+
+        fauzi.close();
     }
 }
