@@ -35,7 +35,8 @@ public class SearchNilai28 {
             }
         }
         if (!ditemukan) {
-            System.out.println("Nilai " + key + " tidak ditemukan.");
+            System.out.println("Nilai " + key + " tidak ditemukan pada array nilai yang berjumlah " + elemen + ".");
         }
+        fauzi.close();
     }
 }
