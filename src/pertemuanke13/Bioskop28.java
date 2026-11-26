@@ -22,16 +22,16 @@ public class Bioskop28 {
         // System.out.println(penonton[2].length);
         // System.out.println(penonton[3].length);
         // System.out.println(penonton.length);
-        // for (int i = 0; i < penonton.length; i++) {
-        //     System.out.println("Penonton baris ke-" + (i +1) + ": " + penonton[i].length);
-        // }
         for (String[] barisPenonton : penonton) {
             System.out.println("Panjang baris:" + barisPenonton.length);
         }
         System.out.println();
         System.out.println("Penonton pada baris ke-3:");
-        for (String i : penonton[2]) {
-            System.out.println(i);
+        for (int i = 0; i < penonton.length; i++) {
+            System.out.println("Penonton baris ke-" + (i +1) + ": " + String.join(",", penonton[i]));
         }
+        // for (String i : penonton[2]) {
+        //     System.out.println(i);
+        // }
     }
 }
